@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --background: #44475a;
+  --active: #50fa7b;
+  --active-border: #ff79c6;
+  --deactive: #ff5555;
+  --deactive-border: #bd93f9;
+  --btn-background: #282a36;
+  --time-font-color: #f8f8f2;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.fullbody {
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.btns {
+  margin-bottom: 2em;
+}
+
+.btns .btn {
+  background-color: var(--btn-background);
+  border: 2px solid var(--deactive-border);
+  color: var(--deactive);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 2em 5em;
+}
+
+.config {
+  background-color: var(--btn-background);
+  border: 2px solid var(--deactive-border);
+  color: var(--deactive);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em 3em;
+}
+
+.active {
+  border: 2px solid var(--active-border) !important;
+  color: var(--active) !important;
+}
+
+.time #time {
+  color: var(--time-font-color);
+  font-size: 10em;
+}
+
+.configuration {
+  background-color: var(--background);
+  border: 2px solid var(--active);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: var(--active-border);
+  display: none;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+.configuration label {
+  font-size: 1em;
+}
+
+.configuration input {
+  border: 1px solid var(--active);
+  background-color: var(--btn-background);
+  color: var(--time-font-color);
+  font-size: 0.9em;
+  margin-bottom: 0.75em;
+  outline: none;
+  padding: 1em 2em;
+}

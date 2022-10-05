@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body class="fullbody">
+    <header class="menu">
+      <button class="config btn" onclick="show_config()">CONFIG</button>
+    </header>
+    <main class="app" id="app">
+      <header class="btns">
+        <button id="worktime" class="worktime btn active">TRABALHAR</button>
+        <button id="breaktime" class="breaktime btn">PAUSE</button>
+        <button id="longbreaktime" class="longbreaktime btn">
+          PAUSA LONGA
+        </button>
+      </header>
+      <main class="time">
+        <span id="time">10:00</span>
+      </main>
+    </main>
+    <section id="configuration" class="configuration">
+      <label for="wminutes">Minutos (Trabalho)</label>
+      <input type="text" name="minutes" id="wminutes" />
+      <label for="bminutes">Minutos (Pausa)</label>
+      <input type="text" name="bminutes" id="bminutes" />
+      <label for="lbminutes">Minutos (Pausa Longa)</label>
+      <input type="text" name="lbminutes" id="lbminutes" />
+      <label for="sessions">Sessões</label>
+      <input type="text" name="sessions" id="sessions" />
+      <button onclick="set_config()">Salvar</button>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
